@@ -28,6 +28,7 @@ jobs:
     - name: Build with Maven and SonarCloud
       run: >
         xvfb-run mvn verify -Pjacoco sonar:sonar
+        -Dsonar.projectKey=Bellocci_school-sonarqube-repository
         -Dsonar.organization=belloccifrancesco-github
         -Dsonar.host.url=https://sonarcloud.io
       working-directory: school-sonarqube
