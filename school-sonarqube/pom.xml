@@ -26,6 +26,7 @@
     <failsafe.version>2.22.1</failsafe.version>
     <docker.version>0.34.1</docker.version>
     <jacoco.version>0.8.5</jacoco.version>
+    <sonar.maven.version>3.8.0.2131</sonar.maven.version>
     
     <!-- SonarQube properties -->
     
@@ -143,7 +144,7 @@
 		<plugin>
 		  <groupId>org.sonarsource.scanner.maven</groupId>
 		  <artifactId>sonar-maven-plugin</artifactId>
-		  <version>3.8.0.2131</version>
+		  <version>${sonar.maven.version}</version>
 		</plugin>
 	  </plugins>
 	</pluginManagement>
